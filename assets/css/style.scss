@@ -18,8 +18,21 @@ body{
     background-repeat: no-repeat;
     background-position: top;
     background-size: cover;
-   
+    animation: bg 15s infinite linear;
+    @keyframes bg{
+        0%{
+            background-size: 110%;
+        }
+        50%{
+            background-size: 120%;
+        }
+        100%{
+            background-size: 110%;
+        }
+    }
 }
+
+
 .header__container {
     max-width: 120rem;
     padding: 4rem 1.5rem;
@@ -1352,7 +1365,7 @@ body{
 
     .section__add-container {
         max-width: 120rem;
-        padding:3rem 1.5rem 4rem 1.5rem ;
+        padding:3rem 1.5rem 2rem 1.5rem ;
         margin: 0 auto;
  
     }
