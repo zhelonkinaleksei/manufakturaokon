@@ -16,19 +16,25 @@ body{
 .header {
     background-image: url(../img/main/bg.jpg);
     background-repeat: no-repeat;
-    background-position: top;
-    background-size: cover;
-    animation: bg 15s infinite linear;
-    @keyframes bg{
-        0%{
-            background-size: 110%;
+    background-position: center;
+    animation: bg-animation 15s ease-in-out infinite;
+    transition: all 0.3s ease 0s;
+    @keyframes bg-animation {
+        0% {
+            background-size: 130%;
+
+            
         }
-        50%{
-            background-size: 120%;
+        50% {
+            background-size: 150%;
+
+           
+        }    
+        100% {
+            background-size: 130%;
+            
         }
-        100%{
-            background-size: 110%;
-        }
+      
     }
 }
 
@@ -197,6 +203,9 @@ body{
 
 }
 @media(max-width:768px){
+    .header{
+        animation: none;
+    }
     .header__container {
         padding: 2rem 1.5rem;
     }
@@ -1322,7 +1331,7 @@ body{
         margin-bottom: 2rem;
     }
     .add__row-left {  
-        width: 40rem;
+        max-width: 26rem;
            
     }
     .add__row-left-title {
