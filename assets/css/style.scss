@@ -333,7 +333,8 @@ body{
     }
 }
 .header__bottom-right {
-    padding-right: 2rem;
+    padding-right: 3rem;
+    max-width: 35rem;
 }
 .bottom__right-points {
     display: flex;
@@ -354,6 +355,7 @@ body{
         content: '';
         width: 2.55rem;
         height: 2.7rem;
+        top: 100%;
         left: 0;
         top:-0.2rem;
         background-image: url(../img/main/size.svg);
@@ -917,11 +919,11 @@ body{
         color: #EECD51;
         font-size: 3rem;
     }
-    margin-bottom: 6.4rem;
+    margin-bottom: 3.4rem;
 }
 .row__left-text {
     font-weight: 400;
-    font-size: 2.4rem;
+    font-size: 1.5rem;
     line-height: 115%;
     color: #FFFFFF;
     ul{ 
@@ -931,7 +933,7 @@ body{
             list-style: disc;
         }
     }
-    margin-bottom: 6.3rem;
+    margin-bottom: 3.3rem;
 
 }
 
@@ -1025,10 +1027,10 @@ body{
         span{
             font-size:2.4rem;
         }
-        margin-bottom: 4.4rem;
+        margin-bottom: 3.4rem;
     }
     .row__left-text {
-        font-size: 1.8rem;
+        font-size: 1.5rem;
         ul{ 
             margin-top: 2rem;
             padding-left: 2.1rem;
@@ -1036,7 +1038,7 @@ body{
                 list-style: disc;
             }
         }
-        margin-bottom: 4.3rem;
+        margin-bottom: 3.3rem;
     
     }
     
@@ -1965,13 +1967,21 @@ body{
     }
 }
 .section__connect-button {
+    display: inline;
+    width: 37.7rem;
     font-weight: 400;
-    font-size: 1/4rem;
+    font-size: 1.4rem;
     line-height: 120%;
     color: #000000;
-    padding: 0.9rem 11.6rem 0.9rem 11.6rem;
+    padding: 0.9rem 11.6rem 0.9rem 13.6rem;
     background-color: #ffffff;
     border-radius: 10rem;
+    box-shadow: 0 0 0.7rem #000000;
+    transition: all 0.3s ease 0s;
+    &:active{
+        box-shadow: none;
+
+    }
 }
 @media(max-width:768px){
     .section__conneect-container {
@@ -1997,6 +2007,7 @@ body{
         }
     }
     .section__connect-button {
+        width: 26.647rem;
         font-size: 1.4rem;
         padding: 0.9rem 7.6rem 0.9rem 7.6rem;
     }
@@ -2028,6 +2039,7 @@ body{
     .section__connect-button {
         font-size: 1.4rem;
         padding: 0.9rem 7.6rem 0.9rem 7.6rem;
+        width: 25.216rem;
     }
 }
 /*----------------------------------------------------------------------*/
@@ -2043,6 +2055,7 @@ body{
     align-items: center;
 }
 .footer__logo {
+    display: inline-block;
     width: 5.583rem;
     height: 2.5rem;
     background-image: url(../img/footer/logofooter.png);
