@@ -57,19 +57,30 @@ body{
         display: flex;
         justify-content: space-between;
         width: 48.9rem;
+       
         li{
+          
             a{
+               
                 font-weight: 400;
                 font-size: 1.4rem;
                 line-height: 114%;
                 color: #FFFFFF;
+                &:nth-child(2){
+                    color: #EECD51 ; 
+                }
                 transition: all 0.3s ease 0s;
                 &:hover{
                     color: #EECD51;
                 }
+              
             }
         }
     }
+}
+.header__nav-active{
+    color: #EECD51;
+       
 }
 .header__hours {
     font-weight: 400;
