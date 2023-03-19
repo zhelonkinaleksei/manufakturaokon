@@ -53,19 +53,31 @@ body{
     background-size: cover;
 }
 .header__nav {
+    
     ul{
        display: flex;
        justify-content: space-between;
        width: 48.9rem;
+     
+      
         li{
+            
+            
+            
             display: inline;
            
-            a{
+            a{  
+                
+                span{
+                color: #EECD51;
+                }
+                
                 display: inline-block;
                 font-weight: 400;
                 font-size: 1.4rem;
                 line-height: 114%;
                 transition: all 0.3s ease 0s;
+                
                 &:hover{
                     color: #EECD51;
                 }    
