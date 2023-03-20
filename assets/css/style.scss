@@ -1715,7 +1715,7 @@ body{
     margin: 0 auto;
 }
 .section__filial-row {
-    justify-content: space-between;
+    justify-content: space-around;
     display: flex;
     row-gap: 2rem;
     column-gap: 1rem;
@@ -1893,6 +1893,7 @@ body{
 
 }
 .section__gallery-item {
+    cursor: pointer;
     flex: 1 0 23.5%;
     background-image: url(../img/main/services3.jpg);
     background-size: cover;
